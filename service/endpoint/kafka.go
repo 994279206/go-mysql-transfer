@@ -18,14 +18,14 @@
 package endpoint
 
 import (
+	"github.com/Shopify/sarama"
+	json "github.com/bytedance/sonic"
+	"github.com/juju/errors"
 	"github.com/siddontang/go-mysql/canal"
+	"github.com/siddontang/go-mysql/mysql"
 	"log"
 	"strings"
 	"sync"
-
-	"github.com/Shopify/sarama"
-	"github.com/juju/errors"
-	"github.com/siddontang/go-mysql/mysql"
 
 	"go-mysql-transfer/global"
 	"go-mysql-transfer/metrics"

@@ -19,10 +19,6 @@ package endpoint
 
 import (
 	"context"
-	"log"
-	"strings"
-	"sync"
-
 	"github.com/juju/errors"
 	"github.com/siddontang/go-mysql/canal"
 	"github.com/siddontang/go-mysql/mysql"
@@ -30,6 +26,9 @@ import (
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 	"go.mongodb.org/mongo-driver/mongo/readpref"
+	"log"
+	"strings"
+	"sync"
 
 	"go-mysql-transfer/global"
 	"go-mysql-transfer/metrics"
